@@ -1,0 +1,25 @@
+---
+title: "Data Cleaning"
+format: html
+editor: visual
+---
+
+**Support Vector Machines:**
+
+For the Support Vector Machine model, data processing began by taking a sample of 20,000 observations from the passenger satisfaction dataset. Because support vector machines are trained by solving a quadratic optimization problem, the original dataset, which consisted of 129,880 observations, was too large for the SVM modeling functions to process in a reasonable amount of time, and it was therefore necessary to take a sample to continue analysis with the model. After this, for the SVM modeling function to be able to process the data we were giving it, we had to change the features with character types, to factor types. Therefore, the Gender feature was encoded with 0 representing ‘Male’ and 1 representing ‘Female’, the Customer Type feature was encoded with 0 representing ‘disloyal Customer’ and 1 representing ‘Loyal Customer’, the Type of Travel feature was encoded with 0 representing ‘Business Travel’ and 1 representing ‘Personal Travel’, and the Class feature was encoded with 0 representing ‘Eco’, 1 representing ‘Eco Plus’, and 2 representing ‘Business’. These features were generally encoded with higher numbers referring to the value we believed correlated to higher customer satisfaction. The rest of the features for the dataset are numeric and therefore were left unchanged. After this encoding we then removed all rows with NAN values, and then split the data into testing and training with 80 percent of the data going into training and 20 percent becoming the test set.
+
+**Logistic Regression:**
+
+For the logistic regression model, all 129,487 observations in the data set were used in the model training process. In the cleaning process we normalized all of the continuous variables to a range between 0 and 1 to match the magnitude of the binary categorical variables which had values of 0 or 1. Additionally, we converted said binary categorical variables to have the value 1 or 0 rather than the string values that were present in the data set initially. These variables were gender, customer type, type of travel, and class.
+
+We then checked the data set for missing values and found that there were 393 rows that had a missing value for the arrival delay in minutes. To determine the meaning of the missing value, we checked the data set for cases where arrival delay was equal to 0 to determine if missing value may mean that there was no arrival delay. The data set contained 72,753 instances of a 0 for this variable. Therefore, no value for arrival delay was not equivalent to not having an arrival delay and instead likely means that we do not know the arrival delay time. Because of the size of the dataset and the uncertainty of this value, we decided to remove the 393 rows that had a missing value.
+
+**Generalized Additive Models:**
+
+We decided to focus on only monitoring the impact of the continuous variables as they pertain to the satisfaction of airline passengers. The continuous variables in the airline passenger survey dataset are: “Age”, “Flight.Distance”, “Departure.Delay.in.Minutes”, and “Arrival.Delay.in.Minutes”. The age variable is included due to the wide range of ages included; this includes a minimum age of 7 years old, a maximum age of 85 years old, and an average age of 39.4 years old. 
+
+To start, we prepare our data for analysis. The dataset is split into training and testing subsets, where the entire dataset experiences a 70 percent to 30 percent ratio split. Once split, both datasets are made into smaller subsets, containing only the continuous variables measuring: the age of each reporting passenger, the distance each reporting passenger traveled, the length of the reporting passenger’s departure delay, and the length of the reporting passenger’s arrival delay. Subsequently, the “satisfaction” column in the training dataset is redone. The column, which formerly had “neutral or dissatisfied” and “satisfied” as the two values exclusively contained in the column, now has a “0” in place of  “neutral or dissatisfied” and a “1” in place of “satisfied”.
+
+As a part of preparing our variables for the Generalized Additive Models, we first ran a logistic regression model on the training data subset to get an idea of what variables are more impactful on the choice of satisfaction. To do this, we produced a generalized linear model in R. As seen in the visual below, the most significant predictor variables are age (significance code is approximately 0) and flight distance (significance code is approximately 0), while arrival delay in minutes is slightly less significant (significant code is approximately 0.001) and departure delay in minutes is deemed even less significant (significance code is approximately 0.05). This initial analysis assists us in gauging what variables to focus on and which to disregard. Since each variable carried some linear significance, we decided to include each variable in the future analyses to different extents.
+
+![Summary of variables, highlighting their significance levels.](media/intro1.png)

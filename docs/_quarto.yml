@@ -1,0 +1,37 @@
+project:
+  type: website
+  resources: media/coverreal.png
+
+website:
+  title: "Airline Passenger Satisfaction"
+  navbar:
+    left:
+#      - href: index.qmd
+#        text: Home
+      - href: intro.qmd
+        text: Introduction
+      - href: data.qmd
+        text: Data Cleaning
+      - href: eda.qmd
+        text: Exploratory Data Analysis
+      - href: stat_methods.qmd
+        text: Statistical Methods
+      - href: results.qmd
+        text: Results and Discussion
+      - href: conclusion.qmd
+        text: Conclusion
+      - href: references.qmd
+        text: References
+      - href: poster.qmd
+        text: Poster
+      
+
+format:
+  html:
+    #theme:
+    #  - cosmo
+    css: styles.scss
+    toc: true
+
+
+

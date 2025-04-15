@@ -1,0 +1,44 @@
+/*-- scss:defaults --*/
+
+// Import fonts 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// Font Size 
+
+
+// Colors 
+$lightblue: lightblue;
+$darkblue: rgb(6, 6, 200);
+$orangeish:  rgb(248, 216, 71);
+$black: black;
+$white: #ffffff;
+
+// Base Document Colors 
+$navbar-bg: $darkblue; // navbar 
+$navbar-fg: $white; // navbar foreground elements 
+$navbar-hl: $orangeish; // highlight color when hovering over navbar links 
+$body-bg: $white; // page background 
+$body-color: $black; // page text 
+$footer-bg: $darkblue; // footer 
+$link_color: $lightblue; // hyperlinks 
+
+// Inline Code 
+$code-bg: $darkblue; // inline code background colors 
+$code-color: $darkblue; // inline code text color 
+
+// Code Blocks 
+$code-block-bg: $white; // code block background color
+
+/*-- scss:rules --*/
+
+.full-page-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Send the image to the background */
+}

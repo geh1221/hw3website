@@ -1,0 +1,31 @@
+---
+title: "Exploratory Data Analysis"
+format: html
+editor: visual
+---
+
+For this plot we wanted to explore the counts of the various categorical variables. We did this in order to see the distribution of the different factors that go into determining a passenger's satisfaction. As you can see from the graphs, while the gender distribution is, as expected, more or less equal, the customer type is skewed heavily, so that loyal customers are making up a far larger percentage of the dataset compared to disloyal customers. The type of travel is also skewed with business travel being twice as common among the passengers as compared to personal travel. The final graph showing the distribution of classes shows how business and economy are more or less equally distributed with economy plus making up very little of the dataset.
+
+![](media/data1.png)
+
+For this plot we wanted to explore the distributions of satisfied vs unsatisfied passengers dependent on the categorical variables Class, Type of Travel, Customer Type, and Gender.  We did this in order to get a general understanding about how each of these variables might individually affect passenger satisfaction. As you can see from the graphs, the distribution of satisfied and unsatisfied passengers is more or less equal across genders, with both genders experiencing slightly higher numbers of unsatisfied passengers compared to satisfied passengers. For customer type both loyal and disloyal customers  were comparatively dissatisfied, though disloyal customers did experience comparatively higher rates of dissatisfaction. The distribution of satisfaction changes substantially however, when looking at type of travel, as business travelers were more satisfied than dissatisfied, but passengers on personal travel were overwhelmingly dissatisfied. The final graph showing the distribution of classes shows how business travelers were substantially more satisfied than economy or economy plus travelers with economy travelers showing incredibly high rates of dissatisfaction.
+
+![](media/data2.png)
+
+We decided to focus on the continuous variables, as we will be isolating these specific variables to serve as predictor variables later on in our analysis process. Below, we utilized histograms to display the various distributions for our dataset’s continuous variables as they apply to the reporting passengers’ chosen satisfaction level. This is performed to convey the age of the reporting passengers, the flight distance each reporting passenger traveled, the arrival delay each reporting passenger experienced (measured in minutes), and the departure delay experienced by each reporting passenger (measured in minutes). All distributions are drawn from the testing subset used for our future analyses, which only contains: the age of the reporting passengers, the flight distance each reporting passenger traveled, the arrival delay each reporting passenger experienced (measured in minutes), and the departure delay experienced by each reporting passenger (measured in minutes).
+
+Our first distribution reports on the age of the reporting passengers. The minimum age of 7 years old seems to belong around 250 of the reporting passengers in the dataset. While the maximum age of the reporting passengers is 85 years old and belongs to noticeably less than 50 of the reporting passengers. The distribution has a slight right skew which displays a majority of the reporting airline passengers population being anywhere between 25 years old and 50 years old. As shown below, the majority of the reporting passengers choose to have been satisfied with their flight.
+
+Our second histogram distribution displays the distance traveled by the reporting passengers. The minimum distance being 0 seems to belong to distinctively less than 50 of the reporting passengers in the dataset. While the maximum distance flown by the reporting passengers is approximately 5000 miles and belongs to strikingly close to 0 of the reporting passengers. The distribution has a clear right skew which displays a majority of the reporting airline passengers population traveling less than 1500 miles. As shown below, the majority of the reporting passengers choose to have been satisfied with their flight, with a higher percentage of passengers being satisfied when their flight distance is below 1000 miles.
+
+![](media/data3.png)
+
+![](media/data4.png)
+
+Our third distribution reports on the length of the departure delays in minutes of the reporting passengers. The minimum duration being 0 minutes seems to belong to almost 12,000 of the reporting passengers in the dataset. While the maximum duration of the departure delay of the reporting passengers is barely visible past approximately 250 minutes. The distribution has a clear right skew which displays a majority of the reporting airline passengers population not experiencing much of a flight departure delay at all. As shown below, the majority of the reporting passengers choose to have been satisfied with their flight.
+
+Our fourth distribution reports on the length of the arrival delays in minutes of the reporting passengers. Just like the previous histogram, the minimum duration of arrival delay is 0 minutes and apparently is experienced by almost 12,000 of the reporting passengers in the dataset. Whereas, just like in the previous plot, the maximum duration of the departure delay of the reporting passengers is barely visible past approximately 250 minutes. The distribution also has a clear right skew which displays a majority of the reporting airline passengers population not experiencing much of a flight departure delay at all. As in the last histogram for Exploratory Data Analysis below, the majority of the reporting passengers report to have been satisfied with their flight.
+
+![](media/data5.png)
+
+![](media/data6.png)
