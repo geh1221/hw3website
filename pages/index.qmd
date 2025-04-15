@@ -1,0 +1,6 @@
+---
+format: html
+---
+
+<div class="full-page-image" style="background-image: url('images/coverreal.png');"></div>
+

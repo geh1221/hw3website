@@ -1,0 +1,17 @@
+---
+title: "References"
+format: html
+editor: visual
+---
+
+Klein, T. (2020, February 20). Airline passenger satisfaction. Kaggle. https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction/data?select=train.csv 
+
+James, G., Witten, D., Hastie, T., & Tibshirani, R. (2021). An introduction to statistical learning: With applications in R. Springer. 
+
+Jiang, X., Zhang, Y., Li, Y., & Zhang, B. (2024, March 5). Forecast and analysis of aircraft passenger satisfaction based on RF-RFE-LR model. Scientific Reports. Retrieved April 30, 2024, from <https://www.nature.com/articles/s41598-022-14566-3>
+
+Jurafsky, D., & Martin, J. (2008). Logistic Regression. In Speech and Language Processing, 2nd Edition (pp. 1-8). Pearson Prentice Hall. <https://web.stanford.edu/~jurafsky/slp3/5.pdf>
+
+Pereira, F., Costa, J. M., Ramos, R., & Raimundo, A. (2023). The impact of the COVID-19 pandemic on airlines' passenger satisfaction. Journal of air transport management, 112, 102441. <https://doi.org/10.1016/j.jairtraman.2023.102441>
+
+Troy, M., (2023, May 10). 2023 North America Airline Satisfaction Study.  J.D. Power. Retrieved April 30, 2024, from <https://www.jdpower.com/business/press-releases/2023-north-america-airline-satisfaction-study>
